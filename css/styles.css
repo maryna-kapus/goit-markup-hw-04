@@ -443,7 +443,7 @@ body {
 }
 
 .instagram-team {
-  background: #AFB1B8;
+  color: #AFB1B8;
   background-image: url(../svg/instagram2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -451,7 +451,7 @@ body {
 }
 
 .twitter-team {
-  background: #AFB1B8;
+  color: #AFB1B8;
   background-image: url(../svg/twitter2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -459,7 +459,7 @@ body {
 }
 
 .facebook-team {
-  background: #AFB1B8;
+  color: #AFB1B8;
   background-image: url(../svg/facebook2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -467,12 +467,29 @@ body {
 }
 
 .linkedin-team {
-  background: #AFB1B8;
+  color: #AFB1B8;
   background-image: url(../svg/linkedin2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.linkedin-team:hover,
+.linkedin-team:focus,
+.twitter-team:hover,
+.twitter-team:focus,
+.instagram-team:hover,
+.instagram-team:focus,
+.facebook-team:hover,
+.facebook-team:focus
+{
+  background-color:var(--accent-color);
+  color: #ffffff;
+  
+}
+
+
+
 
 
 
