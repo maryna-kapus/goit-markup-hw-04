@@ -141,7 +141,8 @@ body {
 .map:focus,
 .map:hover,
 .foot-nav-contact:hover,
-.foot-nav-contact:focus {
+.foot-nav-contact:focus
+ {
   color: var(--accent-color);
 }
 
@@ -179,16 +180,26 @@ body {
   text-align: center;
 }
 
-.mail,
-.mobile{
-  list-style: none;
-  display: flex;
+
+
+.mail-icon,
+.mobile-icon{
+  display: flex; 
   align-items: center;
   gap: 10px;
 }
 
+.fill-mail,
+.fill-mobile{
+  fill: var(--secondary-text-color);
+}
 
-
+.fill-mail:focus,
+.fill-mail:hover,
+.fill-mobile:hover,
+.fill-mobile:focus{
+  fill: var(--accent-color);
+}
 
 
 
@@ -200,7 +211,7 @@ body {
 .hero {
   padding: 200px 0;
   background-color: var(--footer-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/fon.jpg);
   text-align: center;
 }
@@ -443,35 +454,58 @@ body {
 }
 
 .instagram-team {
-  color: #AFB1B8;
-  background-image: url(../svg/instagram2.svg);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: #AFB1B8;
+    width: 50%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  /* background-image: url(../svg/instagram2.svg); */
+  /* background-size: 20px; */
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
 .twitter-team {
-  color: #AFB1B8;
+    fill: #AFB1B8;
+      width: 50%;
+      height: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  /* color: #AFB1B8;
   background-image: url(../svg/twitter2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .facebook-team {
-  color: #AFB1B8;
+      fill: #AFB1B8;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  /* color: #AFB1B8;
   background-image: url(../svg/facebook2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .linkedin-team {
-  color: #AFB1B8;
+      fill: #AFB1B8;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  /* color: #AFB1B8;
   background-image: url(../svg/linkedin2.svg);
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .linkedin-team:hover,
@@ -484,7 +518,7 @@ body {
 .facebook-team:focus
 {
   background-color:var(--accent-color);
-  color: #ffffff;
+  fill: #ffffff;
   
 }
 
@@ -512,14 +546,23 @@ body {
   margin-bottom: 50px;
 }
 
+.client-a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .client-root {
   flex-basis: calc((100% - 5 * 30px) / 6);
   width: 170px;
   height: 92px;
   border: 1px solid var(--border-client);
   border-radius: 4px;
-  align-items: center;
+  /* align-items: center;
   display: flex;
+  justify-content: center; */
   
 }
 
@@ -599,7 +642,7 @@ body {
 }
 
 
-.link-h3{
+.link-p{
 font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -644,11 +687,12 @@ font-family: 'Roboto';
   }
 
   .linkedin{
-    background: rgba(255, 255, 255, 0.1);
+    fill: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1);
     background-image: url(../svg/linkedin\ 1.svg);
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
   }
 
 .s-link:not(:last-child) {
@@ -749,8 +793,9 @@ font-family: 'Roboto';
 } */
 
 
-.pf-flex:hover,
-.pf-flex:focus{
+.pf-a:hover,
+.pf-a:focus{
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
