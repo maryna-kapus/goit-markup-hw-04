@@ -194,10 +194,10 @@ body {
   fill: var(--secondary-text-color);
 }
 
-.fill-mail:focus,
-.fill-mail:hover,
-.fill-mobile:hover,
-.fill-mobile:focus{
+.nav-contact:focus .fill-mail,
+.nav-contact:hover .fill-mail,
+.nav-contact:hover .fill-mobile,
+.nav-contact:focus .fill-mobile{
   fill: var(--accent-color);
 }
 
@@ -214,6 +214,8 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/fon.jpg);
   text-align: center;
+  width: 1600px;
+  margin: auto;
 }
 
 
@@ -222,7 +224,7 @@ body {
   margin: 0 auto 30px;
 
   color: var(--white-btn-color);
-  background: var(--footer-bg-color);
+  /* background: var(--footer-bg-color); */
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -308,7 +310,7 @@ body {
    margin-right: 30px;
 }
 
-.spesiality-li::before{
+/* .spesiality-li::before{
   display: block;
   content: "";
   height: 120px;
@@ -319,9 +321,22 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
 
-}
+} */
+.icon-spesiality{
+  flex-basis: calc((100% - 3 * 30px) / 4);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA;
+      margin-bottom: 30px;
+        /* width: 100%;
+          height: 100%; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-.spesiality-ul .icon-antena::before{
+}
+/* .spesiality-ul .icon-antena::before{
   background-image: url("../svg/antenna\ 1.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -343,7 +358,7 @@ body {
   background-image: url("../svg/astronaut\ 1.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 .spesiality-title {
   margin-bottom: 10px;
@@ -454,12 +469,12 @@ body {
 }
 
 .instagram-team {
-  fill: #AFB1B8;
+  /* fill: #AFB1B8;
     width: 50%;
       height: 50%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center; */
   /* background-image: url(../svg/instagram2.svg); */
   /* background-size: 20px; */
   /* background-repeat: no-repeat;
@@ -467,12 +482,12 @@ body {
 }
 
 .twitter-team {
-    fill: #AFB1B8;
+    /* fill: #AFB1B8;
       width: 50%;
       height: 50%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center; */
   /* color: #AFB1B8;
   background-image: url(../svg/twitter2.svg);
   background-size: 20px;
@@ -481,12 +496,12 @@ body {
 }
 
 .facebook-team {
-      fill: #AFB1B8;
-        width: 50%;
-        height: 50%;
+      /* fill: #AFB1B8; */
+        /* width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
   /* color: #AFB1B8;
   background-image: url(../svg/facebook2.svg);
   background-size: 20px;
@@ -495,12 +510,12 @@ body {
 }
 
 .linkedin-team {
-      fill: #AFB1B8;
+      /* fill: #AFB1B8;
         width: 50%;
         height: 50%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
   /* color: #AFB1B8;
   background-image: url(../svg/linkedin2.svg);
   background-size: 20px;
@@ -508,21 +523,40 @@ body {
   background-position: center; */
 }
 
-.linkedin-team:hover,
-.linkedin-team:focus,
-.twitter-team:hover,
-.twitter-team:focus,
-.instagram-team:hover,
-.instagram-team:focus,
-.facebook-team:hover,
-.facebook-team:focus
-{
-  background-color:var(--accent-color);
-  fill: #ffffff;
-  
+
+
+.icon-team{
+  fill: #AFB1B8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.s-link {
+  display: inline-block;
+  margin-top: 16px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50px;
 }
 
+/* .icon-team:hover .linkedin-team,
+.icon-team:focus .linkedin-team,
+.icon-team:hover .twitter-team,
+.icon-team:focus .twitter-team,
+.icon-team:hover .instagram-team,
+.icon-team:focus .instagram-team,
+.icon-team:hover .facebook-team,
+.icon-team:focus .facebook-team */
+.s-link:hover,
+.s-link:focus
+{
+  color: #ffffff;
+  background-color:var(--accent-color);
 
+}
 
 
 
@@ -546,7 +580,8 @@ body {
   margin-bottom: 50px;
 }
 
-.client-a{
+.icon-client{
+  fill: #AFB1B8;
   width: 100%;
   height: 100%;
   display: flex;
@@ -571,7 +606,12 @@ body {
 }
 
 
-
+.icon-client:hover,
+.icon-client:focus{
+border: 1px solid var(--accent-color);
+border-radius: 4px;
+      fill: var(--accent-color);
+}
 
 
 
@@ -614,7 +654,7 @@ body {
   letter-spacing: 0.03em;
 }
 .foot-nav-contact {
- 
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -634,7 +674,7 @@ body {
 
 /* приєднуйтесь */
 
-.sosial-link{
+.sosial-link-foot{
   /* display: flex; */
   flex-wrap: wrap;
 
@@ -650,19 +690,36 @@ font-family: 'Roboto';
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
+margin-bottom: 10px;
   color: var(--white-btn-color);
 }
+.all-foot-container{
+  display: flex;
+  align-items: baseline ;
+}
+.foot-container{
+  margin: 70px;
+}
 
-.s-link {
+.icon-foot {
+  fill: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.s-link-foot {
   display: inline-block;
   height: 44px;
   width: 44px;
   border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 
-.instagram{
+/* .instagram-foot{
   background: rgba(255, 255, 255, 0.1);
   background-image: url(../svg/instagram\ 2.svg);
   background-size: 20px;
@@ -693,14 +750,18 @@ font-family: 'Roboto';
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center; */
-  }
+   
 
 .s-link:not(:last-child) {
   margin-right: 10px;
 }
 
 
+.s-link-foot:hover,
+.s-link-foot:focus {
+  background: var(--accent-color);
 
+}
 
 
 
